@@ -52,5 +52,6 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     printDumps(args.host, args.banco, args.collection)
+    time.sleep(5) #Tempo para criação de descoberta e envio de resultados
     processaResultado(args.host, args.banco, args.collection, args.host_zabbix)
     
